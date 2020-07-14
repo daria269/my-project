@@ -1,0 +1,30 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "Личный проект на буткемпе",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "test": "stylelint **/*.css",
+    "build": "pug -o . templates/index.pug & csso templates/index.css --output css/index.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daria269/1-my-project.git"
+  },
+  "author": "Daria Kravchenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daria269/1-my-project/issues"
+  },
+  "homepage": "https://github.com/daria269/1-my-project#readme",
+  "devDependencies": {
+    "csso-cli": "^3.0.0",
+    "live-server": "^1.2.1",
+    "normalize.css": "^8.0.1",
+    "pug-cli": "^1.0.0-alpha6",
+    "stylelint": "^13.6.1",
+    "uglify-js-es6": "^2.8.9"
+  },
+  "dependencies": {}
+}
