@@ -1,8 +1,8 @@
 :root {
     --basic-black: #000;
+    --extra-dark: #333;
     --grey-header-bg: #c4c4c4;
     --grey-text: #828282;
-    --extra-dark: #333;
 }
 
 @font-face {
@@ -12,20 +12,20 @@
 
 @font-face {
     font-family: "Roboto";
-    src: url("/fonts/Roboto-Black.ttf");
     font-weight: 700;
+    src: url("/fonts/Roboto-Black.ttf");
 }
 
 .body {
+    color: var(--basic-black);
+    display: grid;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.2;
-    color: var(--basic-black);
-    margin: 0 auto;
-    height: 100vh;
-    display: grid;
     grid-template-rows: min-content 1fr min-content;
+    height: 100vh;
+    line-height: 1.2;
+    margin: 0 auto;
 }
 
 *,
@@ -39,11 +39,11 @@ p {
 }
 
 ul {
-    padding: 0;
-    margin: 0;
     display: grid;
-    row-gap: 10px;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    row-gap: 10px;
 }
 
 a:link {
