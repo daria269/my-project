@@ -1,51 +1,43 @@
 :root {
-    --basic-black: #000;
-    --extra-dark: #333;
-    --grey-header-bg: #c4c4c4;
-    --grey-text: #828282;
+  --basic-black: #000;
+  --extra-dark: #333;
+  --grey-header-bg: #c4c4c4;
+  --grey-text: #828282;
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: url("/fonts/Roboto-Regular.ttf");
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Regular.ttf");
 }
 
 @font-face {
-    font-family: "Roboto";
-    font-weight: 700;
-    src: url("/fonts/Roboto-Black.ttf");
+  font-family: "Roboto";
+  font-weight: 700;
+  src: url("/fonts/Roboto-Black.ttf");
 }
 
 .body {
-    color: var(--basic-black);
-    display: grid;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    grid-template-rows: min-content 1fr min-content;
-    height: 100vh;
-    line-height: 1.2;
-    margin: 0 auto;
+  color: var(--basic-black);
+  display: grid;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  grid-template-rows: min-content 1fr min-content;
+  height: 100vh;
+  line-height: 1.2;
+  margin: 0 auto;
 }
 
 *,
 ::after,
 ::before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 p {
-    margin: 0;
-}
-
-ul {
-    display: grid;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    row-gap: 10px;
+  margin: 0;
 }
 
 a:link {
-    color: inherit;
+  color: inherit;
 }
