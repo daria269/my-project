@@ -1,23 +1,23 @@
-@import "/templates/common.css";
+@import "/templates/normalize.css";
 
 .header {
-    padding: 56px 34px 95px;
     background-color: var(--grey-header-bg);
     background-image: url(/img/background/sea-bg.jpg);
     background-size: cover;
+    padding: 56px 34px 95px;
 }
 
 .header__text {
+    color: var(--extra-dark);
     font-weight: 900;
     font-size: 48px;
     line-height: 1.2;
-    color: var(--extra-dark);
     text-align: center;
 }
 
 .footer {
+    color: var(--grey-text);
     font-size: 14px;
     line-height: 1.1;
     margin: 30px;
-    color: var(--grey-text);
 }
