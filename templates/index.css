@@ -1,33 +1,24 @@
-.body {
-    margin: 0 auto;
-    height: 100vh;
-    display: grid;
-    grid-template-rows: min-content 1fr min-content;
-}
+@import "/templates/common.css";
+
 
 .header {
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: aqua;
+    padding: 56px 34px 95px;
+    background-color: var(--grey-header-bg);
+    background-image: url(/img/background/sea-bg.jpg);
+    background-size: cover;
 }
 
-.main {
-    font-size: 20px;
-    margin: 0 60px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.main-content {
-    background-color: blueviolet;
-    width: 30%;
+.header__text {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1.2;
+    color: var(--extra-dark);
     text-align: center;
 }
 
 .footer {
-    background-color: coral;
-    text-align: center;
+    font-size: 14px;
+    line-height: 1.1;
+    margin: 30px;
+    color: var(--grey-text);
 }
