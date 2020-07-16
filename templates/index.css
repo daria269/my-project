@@ -1,5 +1,13 @@
 @import "/templates/normalize.css";
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .header {
   background-color: var(--grey-header-bg);
   background-image: url(/img/background/sea-bg.jpg);
@@ -25,4 +33,58 @@
 .footer__nav {
   display: grid;
   row-gap: 10px;
+}
+
+.description {
+  font-weight: 900;
+  margin: 35px 30px 0;
+}
+
+.tour-conditions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 15px 0;
+}
+
+.tour-conditions__item {
+  margin-top: 130px;
+  position: relative;
+  width: 45%;
+}
+
+.tour-conditions__item::before {
+  content: "";
+  height: 60px;
+  position: absolute;
+  top: -80px;
+  width: 60px;
+}
+
+.tour-conditions__item:nth-of-type(1)::before {
+  background-image: url(/img/icons/bungalow.png);
+}
+
+.tour-conditions__item:nth-of-type(2)::before {
+  background-image: url(/img/icons/bike.png);
+}
+
+.tour-conditions__item:nth-of-type(3)::before {
+  background-image: url(/img/icons/island.png);
+}
+
+.tour-conditions__item:nth-of-type(4)::before {
+  background-image: url(/img/icons/camera.png);
+}
+
+.tour-conditions__item:nth-of-type(5)::before {
+  background-image: url(/img/icons/ball.png);
+}
+
+.tour-conditions__item:nth-of-type(6)::before {
+  background-image: url(/img/icons/ambulance.png);
+}
+
+.special-offer {
+  margin: 50px 30px 0;
 }
