@@ -4,9 +4,9 @@
   "description": "Личный проект на буткемпе",
   "main": "index.js",
   "scripts": {
-    "start": "live-server",
+    "start": "live-server --open=build",
     "test": "stylelint templates/*.css",
-    "build": "pug -o . templates/index.pug & csso templates/index.css --output index.min.css"
+    "build": "pug -o build/ templates/index.pug & csso templates/index.css --output build/index.min.css"
   },
   "repository": {
     "type": "git",
