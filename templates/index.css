@@ -1,33 +1,28 @@
-.body {
-    margin: 0 auto;
-    height: 100vh;
-    display: grid;
-    grid-template-rows: min-content 1fr min-content;
-}
+@import "/templates/normalize.css";
 
 .header {
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: aqua;
+  background-color: var(--grey-header-bg);
+  background-image: url(/img/background/sea-bg.jpg);
+  background-size: cover;
+  padding: 56px 34px 95px;
 }
 
-.main {
-    font-size: 20px;
-    margin: 0 60px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.main-content {
-    background-color: blueviolet;
-    width: 30%;
-    text-align: center;
+.header__text {
+  color: var(--extra-dark);
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .footer {
-    background-color: coral;
-    text-align: center;
+  color: var(--grey-text);
+  font-size: 14px;
+  line-height: 1.1;
+  margin: 30px;
+}
+
+.footer__nav {
+  display: grid;
+  row-gap: 10px;
 }
