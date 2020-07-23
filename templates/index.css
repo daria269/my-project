@@ -10,9 +10,9 @@
 
 .header {
   background-color: var(--grey-header-bg);
-  background-image: url(/img/background/sea-bg.jpg);
+  background-image: url("../img/background/sea-bg.jpg");
   background-size: cover;
-  padding: 56px 34px 95px;
+  padding: 55px 10px 95px;
 }
 
 .header__text {
@@ -44,45 +44,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 15px 0;
 }
 
 .tour-conditions__item {
-  margin-top: 130px;
+  box-sizing: border-box;
+  margin-top: 50px;
+  padding: 0 15px;
   position: relative;
-  width: 45%;
+  width: 50%;
 }
 
-.tour-conditions__item::before {
-  content: "";
-  height: 60px;
-  position: absolute;
-  top: -80px;
-  width: 60px;
-}
-
-.tour-conditions__item:nth-of-type(1)::before {
-  background-image: url(/img/icons/bungalow.png);
-}
-
-.tour-conditions__item:nth-of-type(2)::before {
-  background-image: url(/img/icons/bike.png);
-}
-
-.tour-conditions__item:nth-of-type(3)::before {
-  background-image: url(/img/icons/island.png);
-}
-
-.tour-conditions__item:nth-of-type(4)::before {
-  background-image: url(/img/icons/camera.png);
-}
-
-.tour-conditions__item:nth-of-type(5)::before {
-  background-image: url(/img/icons/ball.png);
-}
-
-.tour-conditions__item:nth-of-type(6)::before {
-  background-image: url(/img/icons/ambulance.png);
+.tour-conditions__icon {
+  margin-bottom: 20px;
 }
 
 .special-offer {
