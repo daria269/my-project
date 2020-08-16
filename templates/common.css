@@ -1,7 +1,7 @@
 :root {
   --basic-black: #000;
   --extra-dark: #333;
-  --grey-header-bg: #c4c4c4;
+  --grey-header-bg: #f5e9dc;
   --grey-text: #828282;
 }
 
@@ -26,6 +26,7 @@
   height: 100vh;
   line-height: 1.2;
   margin: 0 auto;
+  max-width: 640px;
 }
 
 *,
