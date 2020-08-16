@@ -1,10 +1,18 @@
 @import "/templates/normalize.css";
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .header {
   background-color: var(--grey-header-bg);
-  background-image: url(/img/background/sea-bg.jpg);
+  background-image: url("../img/background/sea-bg.jpg");
   background-size: cover;
-  padding: 56px 34px 95px;
+  padding: 55px 10px 95px;
 }
 
 .header__text {
@@ -25,4 +33,31 @@
 .footer__nav {
   display: grid;
   row-gap: 10px;
+}
+
+.description {
+  font-weight: 900;
+  margin: 35px 30px 0;
+}
+
+.tour-conditions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tour-conditions__item {
+  box-sizing: border-box;
+  margin-top: 50px;
+  padding: 0 15px;
+  position: relative;
+  width: 50%;
+}
+
+.tour-conditions__icon {
+  margin-bottom: 20px;
+}
+
+.special-offer {
+  margin: 50px 30px 0;
 }
