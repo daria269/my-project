@@ -41,6 +41,24 @@ html(lang="ru")
       article.special-offer
         h2 Дайте две!
         p При покупке двух путевок, вы получаете скидку 20% и доступ к трем любым бесплатным экскурсиям внутри выбранной страны
+      section.request
+        h2.request__title Поехали, же
+        p.request__note Оставьте нам ваш телефон и электронную почту и выберите страну, в которую хотите поехать и мы вам перезвоним
+        form.request__form.form(action="" method="POST")
+          div.form__element
+            label.form__label(for="tel") Номер телефона
+            input.form__input#tel(type="tel" placeholder="+79910071162" value="+79910071162" required)
+          div.form__element
+            label.form__label(for="email") Электронная почта
+            input.form__input#email(type="email" placeholder="alexeenko.igor@gmail.com" required)
+          div.form__element
+            label.form__label(for="country") Страна
+            select.form__input#country(name="country" required)
+              option(value="Bali") Бали
+              option(value="Thailand") Таиланд
+              option(value="Sri-Lanka") Шри-Ланка
+              option(value="Vietnam") Вьетнам
+          button.form__button Оформить заявку
     footer.footer
       nav.footer__nav
         span Туристическая фирма “Нормал-тревел”
