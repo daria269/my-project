@@ -3,6 +3,9 @@
   --extra-dark: #333;
   --grey-header-bg: #f5e9dc;
   --grey-text: #828282;
+  --input-bg: #f2f2f2;
+  --grey-border: #bdbdbd;
+  --request-color: #f2994a;
 }
 
 @font-face {
