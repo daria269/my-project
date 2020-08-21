@@ -1,0 +1,15 @@
+form.request__form.form(action="" method="POST")
+  div.form__element
+    label.form__label(for="tel") Номер телефона
+    input.form__input#tel(type="tel" placeholder="+79910071162" value="+79910071162" required)
+  div.form__element
+    label.form__label(for="email") Электронная почта
+    input.form__input#email(type="email" placeholder="alexeenko.igor@gmail.com" required)
+  div.form__element
+    label.form__label(for="country") Страна
+    select.form__input#country(name="country" required)
+      option(value="Bali") Бали
+      option(value="Thailand") Таиланд
+      option(value="Sri-Lanka") Шри-Ланка
+      option(value="Vietnam") Вьетнам
+  button.form__button Оформить заявку
