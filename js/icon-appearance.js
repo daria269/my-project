@@ -1,5 +1,11 @@
 const icons = document.querySelectorAll('.tour-conditions__icon');
 
+let options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 1
+}
+
 const appear = function(entries, observer) {
   entries.forEach(entry => {
     icons.forEach(icon => {
@@ -10,7 +16,7 @@ const appear = function(entries, observer) {
   })
 };
 
-const observer = new IntersectionObserver(appear);
+const observer = new IntersectionObserver(appear, options);
 
 // я не понимаю, как применить метод ко всем элементам массива по порядку, и можно ли это вообще
 
