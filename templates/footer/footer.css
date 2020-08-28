@@ -1,0 +1,11 @@
+.footer {
+  color: var(--grey-text);
+  font-size: 14px;
+  line-height: 1.1;
+  margin: 30px;
+}
+
+.footer__nav {
+  display: grid;
+  row-gap: 10px;
+}

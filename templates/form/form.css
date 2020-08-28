@@ -1,0 +1,29 @@
+
+.form__element {
+  margin-bottom: 20px;
+}
+
+.form__label {
+  color: var(--grey-text);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form__input {
+  background-color: var(--input-bg);
+  border: 1px solid var(--grey-border);
+  font: inherit;
+  padding: 10px 5px;
+  width: 100%;
+}
+
+.form__button {
+  background: #27ae60;
+  border: 1px solid #bdbdbd;
+  display: block;
+  color: #f2f2f2;
+  font: inherit;
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+}

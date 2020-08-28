@@ -1,0 +1,14 @@
+.request {
+  border-radius: 20px;
+  box-shadow: 0 0 20px var(--request-color);
+  margin: 0 10px 30px;
+  padding: 14px 20px 35px;
+}
+
+.request__title {
+  color: var(--request-color);
+}
+
+.request__note {
+  margin-bottom: 20px;
+}

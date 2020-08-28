@@ -1,0 +1,17 @@
+.tour-conditions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tour-conditions__item {
+  box-sizing: border-box;
+  margin-top: 50px;
+  padding: 0 15px;
+  position: relative;
+  width: 50%;
+}
+
+.tour-conditions__icon {
+  margin-bottom: 20px;
+}
