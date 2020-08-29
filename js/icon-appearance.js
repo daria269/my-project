@@ -12,8 +12,8 @@ const appear = function(entries, observer) {
       let target = entry.target;
       if (entry.isIntersecting) {
         target.style.opacity = 1;
+        observer.unobserve(target);
       }
-      // observer.disconnect();
     });
   })
 };
