@@ -1,7 +1,7 @@
 section.tour-conditions
   h2.visually-hidden У нас лучшие условия!
-  each item in tour-conditions
+  each article in tour-conditions
     article.tour-conditions__item
-      img.tour-conditions__icon(src="../img/icons/" + item.icon)
-      h3 #{item.title}
-      p #{item.description}
+      img.tour-conditions__icon(src="../img/icons/#{article.icon}")
+      h3 #{article.title}
+      p #{article.description}
