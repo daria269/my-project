@@ -5,4 +5,9 @@
 @import "/templates/request/request.css";
 @import "/templates/form/form.css";
 @import "/templates/footer/footer.css";
-@import "/templates/description/description.css";
+
+.description {
+  font-weight: 900;
+  margin: 0;
+  padding: 35px 30px 0;
+}
