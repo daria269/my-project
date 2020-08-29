@@ -9,15 +9,17 @@ let options = {
 const appear = function(entries, observer) {
   entries.forEach(entry => {
     icons.forEach(icon => {
+      let target = entry.target;
       if (entry.isIntersecting) {
-        icon.style.opacity = 1;
+        target.style.opacity = 1;
       }
+      // observer.disconnect();
     });
   })
 };
 
 const observer = new IntersectionObserver(appear, options);
 
-// я не понимаю, как применить метод ко всем элементам массива по порядку, и можно ли это вообще
-
-observer.observe(icons[0]);
+icons.forEach(icon => {
+  observer.observe(icon);
+});
