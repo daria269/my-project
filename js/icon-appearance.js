@@ -8,13 +8,11 @@ let options = {
 
 const appear = function(entries, observer) {
   entries.forEach(entry => {
-    icons.forEach(icon => {
       let target = entry.target;
       if (entry.isIntersecting) {
         target.style.opacity = 1;
         observer.unobserve(target);
       }
-    });
   })
 };
 
