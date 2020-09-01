@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "live-server --open=build",
-    "test": "stylelint templates/*.css",
+    "test": "stylelint templates/*.css & eslint **/*.js",
     "build": "pug -o build/ templates/index.pug & csso templates/index.css --output build/index.min.css & csso templates/common.css --output build/common.min.css"
   },
   "repository": {
@@ -20,6 +20,9 @@
   "homepage": "https://github.com/daria269/1-my-project#readme",
   "devDependencies": {
     "csso-cli": "^3.0.0",
+    "eslint": "^7.8.1",
+    "eslint-cli": "^1.1.1",
+    "eslint-config-htmlacademy": "^0.5.2",
     "live-server": "^1.2.1",
     "normalize.css": "^8.0.1",
     "pug-cli": "^1.0.0-alpha6",
