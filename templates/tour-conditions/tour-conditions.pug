@@ -1,26 +1,7 @@
 section.tour-conditions
   h2.visually-hidden У нас лучшие условия!
-  article.tour-conditions__item
-    img.tour-conditions__icon.lazy_img(src="../img/icons/lazy_img.png" data-src="../img/icons/bungalow.png", alt="Уютные бунгало")
-    h3 Уютные бунгало
-    p Просторные бунгало прямо на берегу моря, с вайфаем
-  article.tour-conditions__item
-    img.tour-conditions__icon.lazy_img(src="../img/icons/lazy_img.png" data-src="../img/icons/bike.png", alt="Байк")
-    h3 Прокат байков
-    p Заправка, ТО, замена и даже штрафы за наш счет
-  article.tour-conditions__item
-    img.tour-conditions__icon.lazy_img(src="../img/icons/lazy_img.png" data-src="../img/icons/island.png", alt="Серфинг")
-    h3 Кайфовая катка
-    p Тренер по серфу, прокат досок и гидриков
-  article.tour-conditions__item
-    img.tour-conditions__icon.lazy_img(src="../img/icons/lazy_img.png" data-src="../img/icons/camera.png", alt="Кино")
-    h3 Развитие
-    p Секции, клубы по интересам, кино, лекции
-  article.tour-conditions__item
-    img.tour-conditions__icon.lazy_img(src="../img/icons/lazy_img.png" data-src="../img/icons/ball.png", alt="Спорт")
-    h3 Спорт
-    p Плавание, бег, кроссфит, йога с опытным инструктором
-  article.tour-conditions__item
-    img.tour-conditions__icon.lazy_img(src="../img/icons/lazy_img.png" data-src="../img/icons/ambulance.png", alt="Страховка")
-    h3 Страховка
-    p Медицинская страховка и страховка от спортивной травмы
+  each article in conditions
+    article.tour-conditions__item
+      img.tour-conditions__icon.lazy_img(src=`../img/icons/lazy_img.png` data-src=`../img/icons/${article.icon}`)
+      h3 #{article.title}
+      p #{article.description}
