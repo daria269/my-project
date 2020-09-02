@@ -1,7 +1,7 @@
 section.tour-conditions
   h2.visually-hidden У нас лучшие условия!
-  each article in tour-conditions
+  each article in conditions
     article.tour-conditions__item
-      img.tour-conditions__icon(src="../img/icons/#{article.icon}")
+      img.tour-conditions__icon.lazy_img(src=`../img/icons/lazy_img.png` data-src=`../img/icons/${article.icon}`)
       h3 #{article.title}
       p #{article.description}
