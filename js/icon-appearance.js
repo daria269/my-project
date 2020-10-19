@@ -37,10 +37,10 @@ function isVisible(element) {
 
 window.addEventListener('scroll', () => {
   images.forEach((image) => {
-    if (!isVisible(image)) {
-      image.style.opacity = 0;
-    } else {
+    if (isVisible(image)) {
       image.style.opacity = 1;
+    } else {
+      image.style.opacity = 0;
     }
   })
 });
